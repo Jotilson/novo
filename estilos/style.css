@@ -71,6 +71,9 @@ a{
     width: 0px;
     height: 0px;
 }
+.unico{
+    display: none;
+}
 iframe{
     width: 210px;
     height: 281px;
