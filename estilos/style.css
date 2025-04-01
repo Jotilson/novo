@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/*Todas as medias */
+
+/* Typical device breakpoints
+pqs  telas: 320px-480px
+celular: ate 481px-768px 
+tablet: 769px-1024px
+desktop: 1025px-1440px
+grandes telas: 1441px */
+
+@font-face {
+    font-family:'sr' ;
+    src: url(../font/Sriracha-Regular.ttf);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(75, 211, 75);
+    overflow: hidden;
+}
+h1{
+ 
+   color: white;
+   font-weight: 800;
+   padding: 5px;
+   font-family: 'sr';
+   text-shadow:4px 2px 5px black;
+}
+
+main{
+ background-image: linear-gradient(to bottom, rgb(69, 203, 91), rgb(127, 229, 127));
+    height: 100vh;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+#laterais{
+    width: 1000px;
+    height: 50vh;
+}
+img{
+    border: 5px solid rgba(225, 228, 219, 0.779);
+   border-radius: 80%;
+   width: 25px;
+   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.329);
+}
+.conteudo{
+    width: 350px;
+}
+ 
+a{
+    color: rgb(45, 64, 239);
+    font-weight: 600;
+    font-family: cursive;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+iframe{
+    width: 210px;
+    height: 281px;
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family:'Bebas' ;
+            src: url('BebasNeue-Regular.ttf') format('Opentype');
+        }
+        @font-face {
+            font-family: 'Sr' ;
+            src: url('Sriracha-Regular.ttf') format('Truetype');
+        }
+        :root{
+            --Titulo: 'Bebas';
+            --Padrao: 'Sr';
+        }
+        body{
+            font-family: var(--Padrao);
+
+        }
+        header{
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        h1{
+            font-size: 5vw;
+            font-family: var(--Titulo);
+            font-style: italic;
+        }
+        h4{
+            text-decoration: underline;
+        }
+       div#container{
+        overflow-x: auto;
+       }
+        table{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+           
+            
+        }
+        thead>tr>th{
+           position: sticky;
+           top: 0;
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th{
+            border: 1px solid black;
+            font-family: var(--Padrao);
+            font-weight: 900;
+            
+        }
+        .first{
+            background-color: yellowgreen;
+        }
+        .second{
+            background-color: beige;
+        }
+        .aline{
+            background-color: yellowgreen;
+
+        }
+       caption{
+        font-family: var(--Titulo);
+        font-weight: 100;
+        font-size: 23px;
+       }
+       
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EXERCÍCIO Nº 01 DO MICROSOFT EXCEL</h1>
+        <h2 style="font-size: 3vw;">MAPA DE COMPRA E VENDAS</h2>
+    </header>
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col  class="first">
+                <col class="second">
+                <col  class="first" >
+              <col class="second" span="2">
+              <col  class="first">
+              <col class="second" span="5">
+              <col class="first">
+              <col  class="second">
+        
+            </colgroup>
+            <caption> EXERCÍCIO Nº 01 DO MICROSOFT EXCEL <br>
+                FOLHA DE SALÁRIO EM KWANZAS REFERENTES AO MÊS DE DEZEMBRO DE 2015</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col" class="aline" >Nome</th>
+                    <th rowspan="2" scope="col" class="aline">Função</th>
+                    <th rowspan="2" scope="col" class="aline">Salario Base</th>
+                    <th colspan="2" scope="colgroup" class="aline">Aumento</th>
+                    <th rowspan="3" scope="col" class="aline">Salário Iliquido</th>
+                    <th colspan="5" scope="colgroup" class="aline">Desconto</th>
+                    <th rowspan="2" scope="col" class="aline">Salário Líquido</th>
+        
+                </tr>
+                <tr>
+                    <td class="aline" >Transporte</td>
+                    <td class="aline">S. Alimentação</td>
+                <th class="aline">Nº Faltas</th>
+                <th class="aline">Desc. Faltas</th>
+                <th class="aline">I.R.T     <br>2%</th>
+                <th class="aline">S. SOCIAL <br>3%</th>
+                <th class="aline">Desc. <br>Total</th>
+               </tr>
+        
+        
+            </thead>
+            <tbody>
+                <tr>
+                    <td>José Pinto</td>
+                    <td>Director Geral</td>
+                    <td>500.00</td>
+                    <td>15.000</td>
+                    <td>10.000</td>
+                    <td>525.000 </td>
+                    <td>0 </td>
+                    <td> 0</td>
+                    <td> 10.000</td>
+                    <td>15.000 </td>
+                    <td>25.000 </td>
+                    <td>500.000 </td>
+        
+                </tr>
+                <tr>
+                    <td>Flávio Martins</td>
+                    <td>Director Adj.</td>
+                    <td>45.000</td>
+                    <td>10.000</td>
+                    <td>10.000</td>
+                    <td>65.000 </td>
+                    <td>2 </td>
+                    <td>6.500 </td>
+                    <td>900 </td>
+                    <td>1350 </td>
+                    <td>8.750 </td>
+                    <td>56.250 </td>
+        
+        
+                </tr>
+                <tr>
+                    <td>Novata Gomes</td>
+                    <td>Secretaria</td>
+                    <td>30.000</td>
+                    <td>8.000</td>
+                    <td>10.000</td>
+                    <td>48.000 </td>
+                    <td>1 </td>
+                    <td>2.400 </td>
+                    <td>600 </td>
+                    <td>900 </td>
+                    <td>3.900 </td>
+                    <td>44.100 </td>
+        
+                <tr>
+                    <td>Wandala Dores</td>
+                    <td>Coordenadora</td>
+                    <td>35.000</td>
+                    <td>5.000</td>
+                    <td>10.000</td>
+                    <td>50.000 </td>
+                    <td>4 </td>
+                    <td>10.000 </td>
+                    <td>700 </td>
+                    <td>1050</td>
+                    <td>11750 </td>
+                    <td>38.250 </td>
+        
+                </tr>
+                <tr>
+                    <td>José Pinto</td>
+                    <td>Recepcionista</td>
+                    <td>25.000</td>
+                    <td>4.000</td>
+                    <td>10.000</td>
+                    <td>39.000 </td>
+                    <td>3 </td>
+                    <td>5.850 </td>
+                    <td>500 </td>
+                    <td>750 </td>
+                    <td>7.100 </td>
+                    <td>31.900 </td>
+        
+                </tr>
+        
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total Geral</th>
+                    <th>6 </th>
+                    <th>655.000 </th>
+                    <th>45.000 </th>
+                    <th>60.000 </th>
+                    <th>760.000 </th>
+                    <th>15 </th>
+                    <th>33.000 </th>
+                    <th>13.100 </th>
+                    <th>19.650 </th>
+                    <th>65.750 </th>
+                    <th>694.250</th>
+        
+        
+        
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <h4>FÓRMULAS</h4>
+    <p><b>Salário Ilíquido</b> = Salário Base + Transporte + S.Alimentação</p>
+    <p><b>Desconto de Falta </b>= Salário ilíquido/20*nº falta</p>
+    <p><b>Imposto sobre Rendimento de Trabalho (2% I.R.T)</b> = Salário Base * 2% </p>
+    <p><b>S. Social </b> = Salário Base * 3%</p>
+    <p><b>Desconto Total </b>= Desconto de falta + S.Social + IRT</p>
+    <p><b>Salário Líquido </b>= Salário ilíquido - Desconto Total</p>
+    <p><b>Totais Gerais </b>= Somatório dos 1º Valores + o Último Valor</p>
+    
+</body>
+</html>

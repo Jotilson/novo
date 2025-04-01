@@ -1,0 +1,195 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento de notas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, rgb(27, 232, 130),rgb(59, 244, 12));
+        }
+        main{
+            background-color: white;
+            padding: 25px;
+        }
+        header{
+           background-image: linear-gradient(to bottom, blue, darkblue);
+           min-height: 150px;
+        }
+        h1{
+            font-variant: small-caps;
+            color: white;
+            text-align: center;
+            padding-top: 35px;
+            font-size: 5vw;
+            text-shadow: 3px 5px 2px black;
+        }
+        legend{
+            font-weight: 200;
+            color: red;
+        }
+        fieldset{
+            border: 4px solid rgb(36, 54, 105);
+            border-radius: 5px;
+        }
+        
+        p{
+            color: rgb(0, 0, 0);
+            line-height: 2em;
+            padding-left: 15px;
+            padding-bottom: 10px;
+        }
+        .botao{
+            color: white;
+            border-radius: 10px;
+            border: 4px solid rgba(0, 0, 0, 0.275) ;
+            padding: 10px;
+            margin-top: 15px;
+            background-color: rgb(13, 65, 186);
+        }
+        .botao:hover{
+            border: 4px solid rgba(0, 85, 255, 0.43);
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resultado do Concurso de TLP</h1>
+    </header>
+    
+    <main>
+        <br>
+        <form action="cadatro.php" method="POST">
+        <fieldset style="columns: 2;">
+            <legend>Dados Pessoais</legend>
+        
+        <p><label for="iname">Nome</label>  <br><input type="text" name="nome" id="iname" required placeholder="Nome Completo">
+        </p>
+        <p><label for="inome2">Nome do Pai</label><br><input type="text" name="nome2" id="inome2" required minlength="10" maxlength="35" placeholder="Nome do Pai"></p>
+        
+        <p><label for="inome3">Nome da Mãe</label> <br><input type="text" name="nome3" id="inome3" required minlength="10" maxlength="35" placeholder="Nome da Mãe"></p>
+        
+        <p><label for="ibi">Portador do BI</label><br><input type="tel" name="bi" id="ibi" required placeholder="Número do BI" autocomplete="tel-national"></p>
+        
+ <p><label for="itell">TELL</label><br><input type="number" name="tell" id="itell" required  placeholder="ex: (244)9xxxxxxxx" autocomplete="tel-national" pattern="^\(\d{3}\)\d{4,5}\d{5}$"></p>
+        
+        <p><label for="imorada">Morada</label><br><input type="text" name="morada" id="imorada" required placeholder="Local onde mora"></p>
+        
+        <p><label for="idata">Data de Nascimento</label><br> <input type="number" name="data" id="idata" required placeholder="Ano de nascimento" min="2000" step="1" max="2010">
+        </p>
+        <p><label for="iemail">Email</label><br><input type="email" name="email" id="iemail" required placeholder="name@gmail.com"></p>
+        
+        <p><label for="isexo">Sexo</label>
+        <select name="sexo" id="isexo">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+        </select>
+        </p>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset style="columns: 2;">
+          <legend>Acerca do Aluno</legend>
+          <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;">
+          Qual esporte pratica?
+          </p>
+            <p>
+                <label for="ifoot">Football</label>
+             <input type="checkbox" name="foot" id="ifoot"> <br>
+             <label for="ibask">Basketball</label>
+             <input type="checkbox" name="basket" id="ibask"> <br>
+             <label for="igolf">Golfe</label>
+             <input type="checkbox" name="golfe" id="igolf"> <br>
+             <label for="itenis">Tennis</label>
+             <input type="checkbox" name="tennis" id="itenis"> <br>
+             <label for="ivol">Voleiball</label>
+             <input type="checkbox" name="vol" id="ivol"> <br>
+             <label for="ihand">HandBall</label>
+             <input type="checkbox" name="hand" id="ihand"> <br>
+             <label for="another">Outros</label>
+             <input type="checkbox" name="outros" id="another"> <br>
+    
+            </p>
+        
+        <p style="font-weight: 900; font-family: Arial, Helvetica, sans-serif;"> Estado Cívil</p>
+
+        <p><label for="iest">Solteiro </label><input type="radio" name="est" id="iest" required></p>
+        <p>
+            <label for="ies">Casado</label> <input required type="radio" name="est" id="ies">
+            </p>
+        
+        <p><label for="ili">Línguas Faladas</label> <input type="text" name="li" id="ili" required list="linguas" placeholder="linguas ex(Português-pt)">
+         <datalist id="linguas" >
+            <option value="pt-pr">Português</option>
+            <option value="Ing">Inglês</option>
+            <option value="FR">Françês</option>
+         </datalist>
+        </p>
+         <p><label for="iprof">Profissão</label>
+        <select name="prof" id="profi">
+         <optgroup label="Sector Adminstrativo">
+        <option value="PR">Presidente</option>
+         <option value="ADM">Administrador</option>
+         <option value="SEC">Secretário</option>
+         <option value="PGR">Procurador Geral </option>
+         </optgroup>
+         <optgroup label="Sector Tecnológico">
+        <option value="E.Inf">Engenheiro Informático</option>
+        <option value="T.Inf">Técnico Informático</option>
+        <option value="Dev">Desenvolvedor</option>
+        <option value="Pr">Programador</option>
+         </optgroup>
+         <option value="or">Outro</option>
+         <option value="nh">Nenhum</option>
+        </select>
+        
+        </p>
+        
+        
+        </fieldset>
+        
+        
+        
+        
+        
+        <br>
+        <br>
+        <fieldset style="columns: 2;">
+            <legend>Lançamento de Notas</legend>
+        <p><label for="iclasse">Classe</label> <br> <input type="number" name="classe" id="iclasse" min="10" max="13" required placeholder="10ª-13ª"></p>
+        <p>
+        <label for="iturma">Turma</label> <br> <input type="text" name="turma" id="iturma" maxlength="1" required placeholder="Turma">
+        </p>
+        <p>
+        <label for="iperiodo">Período</label> <br><input type="text" name="periodo" id="iperiodo" required placeholder="Período" maxlength="5">
+        </p>
+        <p>
+        <label for="icurso">Curso</label> <br><input type="text" name="curso" id="icurso" required maxlength="2" list="cursos" value="IG">
+        </p>
+            <datalist id="cursos">
+            <option value="IG">Gestão de Redes e Sistemas Informáticos</option>
+            <option value="EM">Eletromecânica</option>
+            <option value="ER">Energias Renováveis</option>
+            <option value="EI">Eletrecidade</option>
+            </datalist>
+            <p><label for="inum">Nota do 1ª Teste</label> <input type="number" name="num" id="inum" required min="0" max="20" oninput="imedia.innerHTML=(Number(inum.value)+ Number(inum2.value)+ Number(inum3.value)+ Number(inum4.value)+Number(inum5.value))/5" value="0"></p>
+            <p><label for="inum2">Nota do 2ª Teste</label> <input type="number" name="num2" id="inum2" required min="0" max="20" oninput="imedia.innerHTML=(Number(inum.value)+ Number(inum2.value)+ Number(inum3.value)+ Number(inum4.value)+Number(inum5.value))/5" value="0"></p>
+            <p><label for="inum3">Nota do 3ª Teste</label> <input type="number" name="num3" id="inum3" required min="0" max="20"oninput="imedia.innerHTML=(Number(inum.value)+ Number(inum2.value)+ Number(inum3.value)+ Number(inum4.value)+Number(inum5.value))/5" value="0"></p>
+            <p><label for="inum4">Nota do 4ª Teste</label> <input type="number" name="num4" id="inum4" required min="0" max="20" oninput="imedia.innerHTML=(Number(inum.value)+ Number(inum2.value)+ Number(inum3.value)+ Number(inum4.value)+Number(inum5.value))/5" value="0"></p>
+            <p><label for="inum5">Nota do 5ª Teste</label> <input type="number" name="num5" id="inum5" required min="0" max="20" oninput="imedia.innerHTML=(Number(inum.value)+ Number(inum2.value)+ Number(inum3.value)+ Number(inum4.value)+Number(inum5.value))/5" value="0"></p>
+           <p>Média Geral
+            <output id="imedia">0</output>
+           </p>
+        </fieldset>
+
+            <p><input  class="botao" type="submit" value="Enviar">
+            <input  class="botao" type="reset" value="Apagar"></p>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+/*Todas as medias */
+
+/* Typical device breakpoints
+pqs  telas: 320px-480px
+celular: ate 481px-768px 
+tablet: 769px-1024px
+desktop: 1025px-1440px
+grandes telas: 1441px */
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+    table,td{
+    width: 90%;
+    padding: 20px;
+   }
+   
+iframe{
+    width: 520px;
+    height: 281px;
+}
+a{
+    font-size: 15px;
+}
+img{
+    border: 5px solid rgba(225, 228, 219, 0.779);
+   border-radius: 80%;
+   width: 40px;
+   box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.329);
+}
+ 
+}
+
+@media screen and (min-width:1025px) and (max-width:1440px){
+    table,td{
+        width: 80%;
+        padding: 8px;
+       }
+    iframe{
+        width: 900px;
+        height: 340px;
+    }
+    a{
+        font-size: 20px;
+    }
+    img{
+        border: 5px solid rgba(225, 228, 219, 0.779);
+       border-radius: 80%;
+       width: 60px;
+       box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.329);
+       margin-left: 50px;
+    }
+    img:hover{
+        box-shadow: 8px 10px 6px black;
+      transition-duration: 1.2s;
+        border: 5px solid yellow;
+        transform: translate(-10%, -10%);
+        
+    }
+    a:hover{
+        color:  rgba(45, 64, 239, 0.43);
+    }
+    .conteudo{
+        width: 70%;
+    }
+    
+}
