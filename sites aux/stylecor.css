@@ -36,7 +36,6 @@ header{
  a{
     text-decoration: none;
     color: white;
-    background-image: linear-gradient(to bottom, green,rgb(38, 139, 105));
     padding: 5.5px;
     border-radius: 5px;
  }

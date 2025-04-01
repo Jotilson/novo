@@ -10,14 +10,24 @@ desktop: 1025px-1440px
 grandes telas: 1441px */
 
 @media screen and (min-width:769px) and (max-width: 1024px){
+    body{
+        background-image: linear-gradient(to bottom, rgb(69, 203, 91), rgb(127, 229, 127));
+        background-attachment: fixed;
+    }
     table,td{
-    width: 90%;
-    padding: 20px;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
    }
+   main{
+    width: 96vw;
+    box-shadow: -3px -4px -5px black;
+    }
    
 iframe{
     width: 520px;
     height: 281px;
+   
 }
 a{
     font-size: 15px;
@@ -31,13 +41,20 @@ img{
  
 }
 
-@media screen and (min-width:1025px) and (max-width:1440px){
+@media screen and (min-width:1025px) and (max-width:3650px){
     table,td{
-        width: 80%;
+        width: 20%;
         padding: 8px;
+        margin: auto;
        }
+       main{
+       width: 96%;
+       box-shadow: 3px 4px 5px black;
+       height: 130vh;
+       }
+       
     iframe{
-        width: 900px;
+        width: 760px;
         height: 340px;
     }
     a{
@@ -61,7 +78,7 @@ img{
         color:  rgba(45, 64, 239, 0.43);
     }
     .conteudo{
-        width: 70%;
+        width: 20%;
     }
     
 }

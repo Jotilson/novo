@@ -18,8 +18,9 @@ grandes telas: 1441px */
     margin: 0px;
 }
 body{
-    background-color: rgb(75, 211, 75);
-    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgb(69, 203, 91), rgb(127, 229, 127));
+    background-attachment: fixed;
+   
 }
 h1{
  
@@ -29,18 +30,20 @@ h1{
    font-family: 'sr';
    text-shadow:4px 2px 5px black;
 }
+p{
+    text-shadow:4px 2px 5px black;
+}
 
 main{
  background-image: linear-gradient(to bottom, rgb(69, 203, 91), rgb(127, 229, 127));
-    height: 100vh;
+    height: 94vh;
     margin: auto;
     padding-left: 5px;
     padding-right: 5px;
-    
+    background-attachment: fixed;
 }
-
 #laterais{
-    width: 1000px;
+    width: 500px;
     height: 50vh;
 }
 img{
