@@ -42,6 +42,9 @@ main{
     padding-right: 5px;
     background-attachment: fixed;
 }
+footer{
+    display: none;
+  }
 #laterais{
     width: 500px;
     height: 50vh;
